@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* ANIMATIONS */
+@keyframes btn-anim {
+  0% {
+    font-size: 18px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 18px;
+  }
+}
+
+/* VAR */
+
+:root {
+  --color-acqua-green: #38af90;
+  --color-white: #fff;
+  --color-light-gray: #f0f0f0;
+  --color-gray: #797979;
+  --color-light-pink: #dd7e92;
+}
+
+/* ELEMENTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: var(--color-acqua-green);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+}
+
+@media (min-width: 320px) {
+  .nav-container {
+    width: 100%;
+    max-width: 990px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+  }
+
+  .nav-container h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .nav-container ul {
+    display: none;
+  }
+
+  .nav-img-container {
+    width: 62px;
+    height: 62px;
+  }
+
+  .section-upper-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+  }
+
+  .section-upper-container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .section-upper-box {
+    width: 100%;
+    max-width: 990px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-gray);
+    padding: 15px 12px 12px 12px;
+    border-radius: 8px;
+    font-weight: 400px;
+    color: var(--color-acqua-green);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 28px;
+  }
+
+  .section-upper-box:first-of-type {
+    margin-top: 0;
+  }
+
+  .section-upper-box h2 {
+    font-size: 1rem;
+  }
+
+  .upper-box-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin: 3px 0;
+    border-bottom: 1px solid var(--color-acqua-green);
+  }
+
+  .upper-box-date {
+    font-size: 10px;
+    margin-top: 1px;
+  }
+
+  .upper-box-description {
+    font-size: 10px;
+    color: var(--color-gray);
+    margin-top: 12px;
+  }
+
+  .section-upper-box a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-light-pink);
+    margin-top: 12px;
+    text-decoration: none;
+  }
+
+  #btn-upper-box {
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-light-pink);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    margin-top: 28px;
+  }
+  #btn-upper-box:hover {
+    animation: btn-anim 1s infinite;
+  }
+
+  .section-mid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: var(--color-gray);
+    padding: 40px 10px;
+    background-color: var(--color-light-gray);
+  }
+
+  .section-mid-container h2 {
+    font-size: 24px;
+    color: var(--color-acqua-green);
+  }
+
+  .mid-box-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 27px;
+  }
+
+  .mid-img-container {
+    width: 100%;
+  }
+
+  .mid-box-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .mid-box-container h3 {
+    font-size: 18px;
+    color: var(--color-gray);
+  }
+
+  .mid-box-container p:first-of-type {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-gray);
+  }
+
+  .mid-box-container p {
+    font-size: 54px;
+    color: var(--color-acqua-green);
+  }
+
+  .mid-box-container p span {
+    color: var(--color-acqua-green);
+    font-weight: 700;
+  }
+
+  .section-lower-container {
+    width: 100%;
+    padding: 40px 10px;
+  }
+}
