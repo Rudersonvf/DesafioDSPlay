@@ -111,7 +111,35 @@
       </section>
       <section class="section-lower-container">
         <h2>Faça sua inscrição</h2>
-        <form action="#"></form>
+        <form action="#">
+          <input
+            class="form-input-field"
+            type="text"
+            placeholder="Nome completo"
+          />
+          <input class="form-input-field" type="email" placeholder="Email" />
+          <label for="radio-form">Qual sua plataforma preferida?</label>
+          <div>
+            <input type="radio" name="platform" />
+            <label for="radio">PC</label>
+          </div>
+          <div>
+            <input type="radio" name="platform" />
+            <label for="radio">Xbox</label>
+          </div>
+          <div>
+            <input type="radio" name="platform" />
+            <label for="radio">Playstation</label>
+          </div>
+          <div class="form-checkbox-container">
+            <input type="checkbox" />
+            <label for="checkbox">Desejo receber novidades.</label>
+          </div>
+          <div class="form-btn-container">
+            <input id="form-btn-submit" type="submit" value="Enviar" />
+            <input id="form-btn-reset" type="reset" value="Limpar" />
+          </div>
+        </form>
       </section>
       <footer>
         <div>
