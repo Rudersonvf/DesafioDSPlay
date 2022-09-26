@@ -44,7 +44,11 @@ header {
 footer {
   width: 100%;
   height: 300px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-white);
   background-color: var(--color-dark-grey);
+  padding: 30px 35px;
 }
 
 @media (min-width: 320px) {
@@ -294,5 +298,36 @@ footer {
 
   #form-btn-reset:hover {
     animation: btn-anim 1s infinite;
+  }
+
+  .footer-media-links a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  .footer-media-links a:first-child {
+    margin-bottom: 8px;
+  }
+
+  .footer-company {
+    margin-top: 37px;
+    text-align: center;
+  }
+
+  .footer-terms-links {
+    margin-top: 37px;
+  }
+
+  .footer-terms-links a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  .footer-terms-links a:first-child {
+    margin-bottom: 8px;
   }
 }
